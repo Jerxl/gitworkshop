@@ -19,7 +19,7 @@ app.get('/:page', (req, res) => {
     const page = req.params.page;
     res.render(page, (err, html) => {
         if (err) {
-            res.status(404).send('This page does not exist yet');
+            res.status(404).send('This page does not exist yet, add an ejs file in the views tab!');
         } else {
             res.send(html);
         }

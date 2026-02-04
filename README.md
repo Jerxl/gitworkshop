@@ -9,4 +9,7 @@ git clone <url>
 ```bash
 npm install
 ```
-4. Run the 
+4. Run the following command
+```bash
+npm run dev
+```
