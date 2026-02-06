@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Kitty Page</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #f8b9ce, #f5d6c7, #fcd2a1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 700px;
+        max-height: 90vh;
+        background: #ffffffdd;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+        border: 3px solid #f7a6b3;
+      }
+
+      h1 {
+        color: #ed164f;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        color: #f07bb6;
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 8px 0;
+        color: #444;
+      }
+
+      .tagline {
+        font-style: italic;
+        color: #f06292;
+      }
+
+      .badges {
+        margin: 15px 0;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        margin: 4px;
+        border-radius: 999px;
+        background: #ffe7f1;
+        color: #d81b60;
+        font-size: 0.85rem;
+      }
+
+      .photo {
+        margin-top: 20px;
+      }
+
+      .photo img {
+        max-height: 40vh;
+        width: auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 4px solid #f8b9ce;
+      }
+
+      .photo img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .footer {
+        margin-top: 15px;
+        font-size: 0.85rem;
+        color: #777;
+      }
+
+      a {
+        color: #ed164f;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 16px;
+          margin: 10px;
+        }
+        .photo img {
+          max-height: 30vh;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Hello Kitty Corner</h1>
+        <h2 class="tagline">Cute, cozy, and a little bit pink ✨</h2>
+
+        <p>
+          Welcome to your tiny Hello Kitty–themed page! You can customize this
+          however you like using HTML or EJS.
+        </p>
+        <p>
+          Try adding your favorite quotes, fun facts, or even a mini blog about why
+          you love Hello Kitty. Replace text, colors, and the image below to make
+          it your own.
+        </p>
+
+        <div class="badges">
+          <span class="badge">♡ kawaii vibes</span>
+          <span class="badge">♡ pastel colors</span>
+          <span class="badge">♡ Sanrio fan</span>
+        </div>
+
+        <p>
+          This file could be named
+          <strong><%= name %>.ejs</strong>
+          and placed inside your <strong>views</strong> folder in an Express app.
+        </p>
+      </div>
+
+      <div class="photo">
+        <!-- Replace /hello-kitty.png with your actual image path -->
+        <img src="/hello-kitty.png" alt="Hello Kitty" />
+      </div>
+
+      <div class="footer">
+        Made with ♥ in EJS —
+        <a href="https://ejs.co/" target="_blank" rel="noopener noreferrer">learn more about EJS</a>.
+      </div>
+    </div>
+  </body>
+</html>
